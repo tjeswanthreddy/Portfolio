@@ -3,75 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        section {
-            margin: 2rem 0;
-            padding: 2rem 0;
-        }
-        
-        h1 {
-            margin-bottom: 0.5rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-    </style>
+    <title>M Pradeep Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Your name / Professional tagline here</p>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span>M</span> Pradeep Kumar
         </div>
-    </header>
-    
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Add your bio and introduction here...</p>
-        </section>
-        
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Add your projects here...</p>
-        </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Add your skills here...</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Add your contact information here...</p>
-        </section>
-    </main>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#education" class="nav-item">Education</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="M Pradeep Kumar">M Pradeep Kumar</h1>
+            <p class="typewriter">Innovator | Web Developer | Future Thinker</p>
+            <a href="#projects" class="btn neon-btn">Explore My Universe</a>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    I’m M Pradeep Kumar, a visionary web developer crafting digital experiences
+                    that transcend the ordinary. With a passion for innovation, I blend code and
+                    creativity to build immersive, future-ready solutions.
+                </p>
+                <p>
+                    My journey is fueled by curiosity—exploring AI, 3D design, and cutting-edge
+                    frameworks to push the limits of what’s possible on the web.
+                </p>
+            </div>
+            <div class="about-skills">
+                <h3>Skill Matrix</h3>
+                <div class="skills-container">
+                    <div class="skills-row">
+                        <div class="skills-box">
+                            <h4>Programming Languages</h4>
+                            <ul class="skills-grid">
+                                <li><i class="fab fa-c"></i></li>
+                                <li><i class="fab fa-c" style="font-size: small;">++</i></li>
+                                <li><i class="fab fa-java"></i></li>
+                            </ul>
+                        </div>
+                        <div class="skills-box">
+                            <h4>Technical Skills</h4>
+                            <ul class="skills-grid">
+                                <li><i class="fas fa-code-branch"></i></li>
+                                <li><i class="fas fa-database"></i></li>
+                                <li><i class="fas fa-server"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skills-box">
+                            <h4>Technologies</h4>
+                            <ul class="skills-grid">
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-js"></i></li>
+                                <li><i class="fab fa-node"></i></li>
+                            </ul>
+                        </div>
+                        <div class="skills-box">
+                            <h4>More Technologies</h4>
+                            <ul class="skills-grid">
+                                <li><i class="fas fa-server"></i></li>
+                                <li><i class="fas fa-database"></i></li>
+                                <li><i class="fab fa-git-alt"></i></li>
+                                <li><i class="fab fa-github"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Project Showcase</h2>
+        <div class="project-timeline">
+
+            <!-- Customer Churn Analysis -->
+            <div class="project-item odd">
+            <div class="project-image">
+                <img src="https://cdn.smartkarrot.com/wp-content/uploads/2022/07/Customer-Churn-Analysis-SaaS.png" alt="Customer Churn Analysis Dashboard">
+            </div>
+            <div class="project-details">
+                <h3>Customer Churn Analysis</h3>
+                <p>Machine learning model using Python and Scikit-learn to predict churn. Integrated MySQL with Power BI to build real-time dashboards.</p>
+                <a href="https://github.com/PradeepM25/Retention-Insight" target="_blank" class="btn neon-btn">Discover</a>
+            </div>
+            </div>
+
+            <!-- Course GPT -->
+            <div class="project-item odd">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1584697964154-ef33a55e9f0b" alt="Course GPT">
+            </div>
+            <div class="project-details">
+                <h3>Course GPT</h3>
+                <p>A MERN-based platform with Notes and Modules functionality. Uses Gemini API to auto-generate structured course content.</p>
+                <a href="https://github.com/PradeepM25/LearnifyAI" target="_blank" class="btn neon-btn">Discover</a>
+            </div>
+            </div>
+
+            <!-- Inverse Procrastinator -->
+            <div class="project-item even">
+            <div class="project-details">
+                <h3>Inverse Procrastinator</h3>
+                <p>Task manager with full CRUD operations, prioritization, and deadlines. Secure authentication with JWT and MongoDB persistence.</p>
+                <a href="https://github.com/PradeepM25/inverse-procrastinator" target="_blank" class="btn neon-btn">Discover</a>
+            </div>
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1584697964279-22aa2a4d1f3b" alt="Inverse Procrastinator">
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+    <h2 class="section-title">Learning Constellations</h2>
+        <div class="education-container">
+
+            <div class="education-card">
+            <h3>B.Tech in Computer Science (Big Data)</h3>
+            <p><strong>SRM University AP, Guntur</strong> | 2022 – 2026</p>
+            <p>Focused on Big Data, machine learning, and backend development. Maintained a strong academic performance with a CGPA of 8.86/10.</p>
+            </div>
+
+            <div class="education-card">
+            <h3>Intermediate (MPC)</h3>
+            <p><strong>Sri Chaitanya Junior College, Vijayawada</strong> | 2020 – 2022</p>
+            <p>Specialized in Mathematics, Physics, and Chemistry, securing 95.4% and building a strong analytical foundation.</p>
+            </div>
+
+            <div class="education-card">
+            <h3>High School</h3>
+            <p><strong>Sri Chaitanya High School</strong> | 2020</p>
+            <p>Laid the groundwork in science and technology, nurturing a curiosity for problem-solving and innovation.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <h2 class="section-title">Transmit a Signal</h2>
+    <form id="contact-form" class="contact-form">
+        <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn neon-btn">Send Transmission</button>
+    </form>
+
+    <div class="social-links">
+        <a href="https://linkedin.com/in/pradeep-kumar-macha-695a97324" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/PradeepM25" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:machapradeep478@gmail.com" target="_blank" class="social-icon">
+        <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+918004757593" target="_blank" class="social-icon">
+        <i class="fas fa-phone"></i>
+        </a>
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 M Pradeep Kumar | Powered by the Cosmos</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
